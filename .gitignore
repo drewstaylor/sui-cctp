@@ -19,3 +19,4 @@ traces/
 Pub.*.toml
 packages/**/Published.toml
 scripts/deploy.*.env
+*.zip
