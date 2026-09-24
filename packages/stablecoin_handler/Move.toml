@@ -20,16 +20,24 @@ edition = "2024.beta"
 license = "Apache 2.0"
 
 [dependencies.sui_extensions]
-local = "../../stablecoin-sui/packages/sui_extensions"
+git = "https://github.com/circlefin/stablecoin-sui.git"
+subdir = "packages/sui_extensions"
+rev = "master"
 
 [dependencies.TokenMessengerMinterV2]
-local = "../token_messenger_minter_v2"
+git = "https://github.com/drewstaylor/sui-cctp.git"
+subdir = "packages/token_messenger_minter_v2"
+rev = "feature/explorer-verification"
 
 [dependencies.stablecoin]
-local = "../../stablecoin-sui/packages/stablecoin"
+git = "https://github.com/drewstaylor/stablecoin-sui.git"
+subdir = "packages/stablecoin"
+rev = "feature/explorer-verification"
 
 [dependencies.usdc]
-local = "../../stablecoin-sui/packages/usdc"
+git = "https://github.com/drewstaylor/stablecoin-sui.git"
+subdir = "packages/usdc"
+rev = "feature/explorer-verification"
 
 [addresses]
 stablecoin_handler = "0x0"

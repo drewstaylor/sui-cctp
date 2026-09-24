@@ -20,13 +20,19 @@ edition = "2024.beta"
 license = "Apache 2.0"
 
 [dependencies.sui_extensions]
-local = "../../stablecoin-sui/packages/sui_extensions"
+git = "https://github.com/drewstaylor/stablecoin-sui.git"
+subdir = "packages/sui_extensions"
+rev = "feature/explorer-verification"
 
 [dependencies.MessageTransmitterV2]
-local = "../message_transmitter_v2"
+git = "https://github.com/drewstaylor/sui-cctp.git"
+subdir = "packages/message_transmitter_v2"
+rev = "feature/explorer-verification"
 
 [dependencies.CctpExtensions]
-local = "../cctp_extensions"
+git = "https://github.com/drewstaylor/sui-cctp.git"
+subdir = "packages/cctp_extensions"
+rev = "feature/explorer-verification"
 
 [addresses]
 token_messenger_minter_v2 = "0x0"
@@ -36,6 +42,8 @@ token_messenger_minter_v2 = "0x0"
 # from production code; that dependency is gone after the handler
 # decoupling — TMM never touches Coin<T> now).
 [dev-dependencies.stablecoin]
-local = "../../stablecoin-sui/packages/stablecoin"
+git = "https://github.com/drewstaylor/stablecoin-sui.git"
+subdir = "packages/stablecoin"
+rev = "feature/explorer-verification"
 
 [dev-addresses]

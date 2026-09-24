@@ -20,10 +20,14 @@ edition = "2024.beta"
 license = "Apache 2.0"
 
 [dependencies.sui_extensions]
-local = "../../stablecoin-sui/packages/sui_extensions"
+git = "https://github.com/drewstaylor/stablecoin-sui.git"
+subdir = "packages/sui_extensions"
+rev = "feature/explorer-verification"
 
 [dependencies.CctpExtensions]
-local = "../cctp_extensions"
+git = "https://github.com/drewstaylor/sui-cctp.git"
+subdir = "packages/cctp_extensions"
+rev = "feature/explorer-verification"
 
 [addresses]
 message_transmitter_v2 = "0x0"

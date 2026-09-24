@@ -30,6 +30,8 @@ cctp_extensions = "0x0"
 # depends on <sui_extensions> which is not in the linkage table". Same reasoning
 # as TMM v2's `stablecoin` dev-dependency.
 [dev-dependencies.sui_extensions]
-local = "../../stablecoin-sui/packages/sui_extensions"
+git = "https://github.com/drewstaylor/stablecoin-sui.git"
+subdir = "packages/sui_extensions"
+rev = "feature/explorer-verification"
 
 [dev-addresses]
