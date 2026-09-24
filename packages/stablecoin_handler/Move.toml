@@ -23,6 +23,7 @@ license = "Apache 2.0"
 git = "https://github.com/circlefin/stablecoin-sui.git"
 subdir = "packages/sui_extensions"
 rev = "master"
+override = true
 
 [dependencies.TokenMessengerMinterV2]
 git = "https://github.com/drewstaylor/sui-cctp.git"

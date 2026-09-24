@@ -5,15 +5,15 @@
 version = 4
 
 [pinned.mainnet.CctpExtensions]
-source = { local = "../cctp_extensions" }
+source = { git = "https://github.com/drewstaylor/sui-cctp.git", subdir = "packages/cctp_extensions", rev = "fc29c09bce8cb40eb94e342802cd384d6ccfb6b0" }
 use_environment = "mainnet"
-manifest_digest = "C3F7F154EC23231E92D9B5EBABC156077F5CFE0AF545270A844E2AA45330C7FB"
+manifest_digest = "FF4EB2AE0D86183ACDEB3E8EA7FAF3D56B776188BBBEF44C8C2209AAB4213FA0"
 deps = { std = "MoveStdlib", sui = "Sui", sui_extensions = "sui_extensions" }
 
 [pinned.mainnet.MessageTransmitterV2]
-source = { local = "../message_transmitter_v2" }
+source = { git = "https://github.com/drewstaylor/sui-cctp.git", subdir = "packages/message_transmitter_v2", rev = "fc29c09bce8cb40eb94e342802cd384d6ccfb6b0" }
 use_environment = "mainnet"
-manifest_digest = "6CF865B2F75529D27999C02C601088B6BD3BD027DA5D732A857C24FC4CAEB824"
+manifest_digest = "A9B6AC02001BB408286D1210EC3A70D36F6494497596D04AB16995A72C435CC4"
 deps = { CctpExtensions = "CctpExtensions", std = "MoveStdlib", sui = "Sui", sui_extensions = "sui_extensions" }
 
 [pinned.mainnet.MoveStdlib]
@@ -31,17 +31,17 @@ deps = { MoveStdlib = "MoveStdlib" }
 [pinned.mainnet.TokenMessengerMinterV2]
 source = { root = true }
 use_environment = "mainnet"
-manifest_digest = "1D40DE7DCA22B3FC0A3909E1EB785FB633BB628B9A5392A447FB31E0034AA7C5"
+manifest_digest = "2EE143D2F0A014D56BBBD00731E4D6F54E14E48EE761032CBB92CEE2791B576C"
 deps = { CctpExtensions = "CctpExtensions", MessageTransmitterV2 = "MessageTransmitterV2", stablecoin = "stablecoin", std = "MoveStdlib", sui = "Sui", sui_extensions = "sui_extensions" }
 
 [pinned.mainnet.stablecoin]
-source = { local = "../../stablecoin-sui/packages/stablecoin" }
+source = { git = "https://github.com/drewstaylor/stablecoin-sui.git", subdir = "packages/stablecoin", rev = "35b08401b7d292644b8c7310a854f61ba2d74be6" }
 use_environment = "mainnet"
-manifest_digest = "6B08AFABA09DC0D0216E97EB27C33CD7A3791E8DC3631C94FB08528F77C1E3AD"
+manifest_digest = "EBA42C3BD3CA7B107DB57BA4870C827405F96FF0D9A37395432A23B37D285204"
 deps = { std = "MoveStdlib", sui = "Sui", sui_extensions = "sui_extensions" }
 
 [pinned.mainnet.sui_extensions]
-source = { local = "../../stablecoin-sui/packages/sui_extensions" }
+source = { git = "https://github.com/drewstaylor/stablecoin-sui.git", subdir = "packages/sui_extensions", rev = "35b08401b7d292644b8c7310a854f61ba2d74be6" }
 use_environment = "mainnet"
 manifest_digest = "E41BBD67BE8940D26C79D78B028477EF5B33BA217A1282C78ACB344CF8A5ECF6"
 deps = { std = "MoveStdlib", sui = "Sui" }
