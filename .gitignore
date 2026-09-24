@@ -17,7 +17,6 @@ sui-node.log
 bin/
 traces/
 Pub.*.toml
-packages/**/Published.toml
 scripts/deploy.*.env
 *.zip
 .DS_Store
