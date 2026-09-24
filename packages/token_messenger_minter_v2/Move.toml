@@ -28,12 +28,10 @@ rev = "feature/explorer-verification"
 git = "https://github.com/drewstaylor/sui-cctp.git"
 subdir = "packages/message_transmitter_v2"
 rev = "feature/explorer-verification"
-
 [dependencies.CctpExtensions]
 git = "https://github.com/drewstaylor/sui-cctp.git"
 subdir = "packages/cctp_extensions"
 rev = "feature/explorer-verification"
-
 [addresses]
 token_messenger_minter_v2 = "0x0"
 

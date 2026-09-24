@@ -29,7 +29,6 @@ override = true
 git = "https://github.com/drewstaylor/sui-cctp.git"
 subdir = "packages/token_messenger_minter_v2"
 rev = "feature/explorer-verification"
-
 [dependencies.stablecoin]
 git = "https://github.com/drewstaylor/stablecoin-sui.git"
 subdir = "packages/stablecoin"
